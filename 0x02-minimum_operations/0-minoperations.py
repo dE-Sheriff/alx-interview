@@ -20,6 +20,7 @@ def minOperations(n) -> int:
     if isinstance(n, int):
         while len(content) < n:  # always evaluate content length in real time
             if len(copied_text) == 0:
+                # no need to copy, just paste                
                 # there's nothing copied yet!
                 copied_text = content  # copy all
                 content += copied_text  # paste
